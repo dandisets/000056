@@ -44,8 +44,8 @@ assetsSummary:
   - Position
   - ProcessingModule
 citation: Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter C; Buzsáki, György (2021)
-  Internally organized mechanisms of the head direction sense (Version draft) [Data
-  set]. DANDI archive. https://dandiarchive.org/dandiset/000056/draft
+  Internally organized mechanisms of the head direction sense (Version 0.210812.1518)
+  [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000056/0.210812.1518
 contributor:
 - affiliation: []
   includeInCitation: true
@@ -73,6 +73,7 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
+datePublished: '2021-08-12T15:17:03.686485'
 description: The head-direction (HD) system functions as a compass, with member neurons
   robustly increasing their firing rates when the animal's head points in a specific
   direction. HD neurons may be driven by peripheral sensors or, as computational models
@@ -87,17 +88,30 @@ description: The head-direction (HD) system functions as a compass, with member 
   sleep. These findings demonstrate that peripheral inputs impinge on an internally
   organized network, which provides amplification and enhanced precision of the HD
   signal.
+doi: 10.48324/dandi.000056/0.210812.1518
 ethicsApproval: []
-id: DANDI:000056/draft
+id: DANDI:000056/0.210812.1518
 identifier: DANDI:000056
 keywords:
 - ''
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000056/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000056/0.210812.1518/assets.yaml
 name: Internally organized mechanisms of the head direction sense
 protocol: []
+publishedBy:
+  endDate: '2021-08-12T15:17:03.686485'
+  id: urn:uuid:eebad23d-ea76-4af6-882f-70e60f0caa12
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2021-08-12T15:17:03.686485'
+  wasAssociatedWith:
+  - id: urn:uuid:e7aefd35-8912-45a9-a988-dac39290d7ac
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - relation: dcite:IsDescribedBy
   url: https://www.nature.com/articles/nn.3968
@@ -105,6 +119,6 @@ repository: https://dandiarchive.org/
 schemaKey: Dandiset
 schemaVersion: 0.4.4
 studyTarget: []
-url: https://dandiarchive.org/dandiset/000056/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000056/0.210812.1518
+version: 0.210812.1518
 wasGeneratedBy: []
