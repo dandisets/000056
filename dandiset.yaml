@@ -101,7 +101,9 @@ manifestLocation:
 name: Internally organized mechanisms of the head direction sense
 protocol: []
 relatedResource:
-- relation: dcite:IsDescribedBy
+- identifier: https://doi.org/10.1038/nn.3968
+  name: Internally organized mechanisms of the head direction sense
+  relation: dcite:IsDescribedBy
   schemaKey: Resource
   url: https://www.nature.com/articles/nn.3968
 repository: https://dandiarchive.org/
