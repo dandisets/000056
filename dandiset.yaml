@@ -8,6 +8,7 @@ access:
 - contactPoint:
     email: petersen.peter@gmail.com
     schemaKey: ContactPoint
+  schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
   approach:
@@ -44,11 +45,19 @@ assetsSummary:
   - LFP
   - Position
   - ProcessingModule
-citation: Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter C; Buzsáki, György (2024)
-  Internally organized mechanisms of the head direction sense (Version draft) [Data
-  set]. DANDI archive. https://dandiarchive.org/dandiset/000056/draft
+citation: Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter; Buzsáki, György (2025)
+  Internally organized mechanisms of the head direction sense (Version 0.250624.0430)
+  [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000056/0.250624.0430
 contributor:
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  email: adrien.peyrache@mcgill.ca
+  identifier: 0000-0001-9708-309X
   includeInCitation: true
   name: Peyrache, Adrien
   roleName:
@@ -61,20 +70,39 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  identifier: 0000-0002-2092-4791
   includeInCitation: true
-  name: Petersen, Peter C
+  name: Petersen, Peter
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
   identifier: 0000-0002-3100-4800
   includeInCitation: true
   name: Buzsáki, György
   roleName:
   - dcite:Author
   schemaKey: Person
+- identifier: 0000-0002-0829-4790
+  name: Baker, Cody
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
 dateCreated: '2021-01-25T20:20:10.836000+00:00'
+datePublished: '2025-06-24T04:30:50.891430+00:00'
 description: The head-direction (HD) system functions as a compass, with member neurons
   robustly increasing their firing rates when the animal's head points in a specific
   direction. HD neurons may be driven by peripheral sensors or, as computational models
@@ -89,17 +117,29 @@ description: The head-direction (HD) system functions as a compass, with member 
   sleep. These findings demonstrate that peripheral inputs impinge on an internally
   organized network, which provides amplification and enhanced precision of the HD
   signal.
+doi: 10.48324/dandi.000056/0.250624.0430
 ethicsApproval: []
-id: DANDI:000056/draft
+id: DANDI:000056/0.250624.0430
 identifier: DANDI:000056
 keywords:
 - ''
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000056/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000056/0.250624.0430/assets.yaml
 name: Internally organized mechanisms of the head direction sense
-protocol: []
+publishedBy:
+  endDate: '2025-06-24T04:30:50.891430+00:00'
+  id: urn:uuid:cf42f87a-5385-42ca-8524-9998e7c7799c
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-24T04:30:50.891430+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:8400e492-4592-4d99-9312-d4464d59c1f2
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: nternally organized mechanisms of the head direction sense
   name: nternally organized mechanisms of the head direction sense
@@ -111,7 +151,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.4.4
-studyTarget: []
-url: https://dandiarchive.org/dandiset/000056/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000056/0.250624.0430
+version: 0.250624.0430
 wasGeneratedBy: []
