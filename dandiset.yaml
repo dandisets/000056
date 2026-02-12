@@ -70,7 +70,10 @@ contributor:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
   identifier: 0000-0001-9472-5106
   includeInCitation: true
   name: Lacroix, Marie M
@@ -132,6 +135,7 @@ keywords:
 - Thalamocortical circuit
 - Sleep
 - Anterodorsal thalamic nucleus
+- Spatial Navigation
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
