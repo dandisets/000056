@@ -2,7 +2,7 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000056
 # and obtained from the dandiarchive.
 '@context': 
-  https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+  https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
 about:
 - identifier: http://purl.obolibrary.org/obo/UBERON_0002679
   name: anterodorsal nucleus of thalamus
@@ -156,7 +156,7 @@ relatedResource:
   url: https://www.nature.com/articles/nn.3968
 repository: https://dandiarchive.org
 schemaKey: Dandiset
-schemaVersion: 0.4.4
+schemaVersion: 0.7.0
 url: https://dandiarchive.org/dandiset/000056/draft
 version: draft
 wasGeneratedBy: []
