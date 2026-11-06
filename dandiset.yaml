@@ -39,8 +39,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 122793651040
-  numberOfFiles: 41
+  numberOfBytes: 122819652077
+  numberOfFiles: 42
   numberOfSubjects: 7
   schemaKey: AssetsSummary
   species:
@@ -121,6 +121,48 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- awardNumber: R01MH054671
+  identifier: https://ror.org/04xeg9z08
+  includeInCitation: false
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01MH102840
+  identifier: https://ror.org/04xeg9z08
+  includeInCitation: false
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: U01NS090526
+  identifier: https://ror.org/01s5ya894
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: K99NS086915
+  identifier: https://ror.org/01s5ya894
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01NS034994
+  identifier: https://ror.org/01s5ya894
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01NS074015
+  identifier: https://ror.org/01s5ya894
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2021-01-25T20:20:10.836000+00:00'
 description: The head-direction (HD) system functions as a compass, with member neurons
   robustly increasing their firing rates when the animal's head points in a specific
@@ -159,6 +201,12 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/nn.3968
+- name: Conversion code (catalystneuro/buzsaki-lab-to-nwb)
+  relation: dcite:IsSupplementedBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/buzsaki-lab-to-nwb
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
