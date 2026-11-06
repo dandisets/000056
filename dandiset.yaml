@@ -57,8 +57,8 @@ assetsSummary:
   - Units
   - ElectrodeGroup
 citation: Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter; Buzsáki, György (2026)
-  Internally organized mechanisms of the head direction sense (Version draft) [Data
-  set]. DANDI Archive. https://dandiarchive.org/dandiset/000056/draft
+  Internally organized mechanisms of the head direction sense (Version 0.261106.1949)
+  [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000056/0.261106.1949
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -164,6 +164,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2021-01-25T20:20:10.836000+00:00'
+datePublished: '2026-11-06T19:49:34.936607+00:00'
 description: The head-direction (HD) system functions as a compass, with member neurons
   robustly increasing their firing rates when the animal's head points in a specific
   direction. HD neurons may be driven by peripheral sensors or, as computational models
@@ -178,8 +179,9 @@ description: The head-direction (HD) system functions as a compass, with member 
   sleep. These findings demonstrate that peripheral inputs impinge on an internally
   organized network, which provides amplification and enhanced precision of the HD
   signal.
+doi: 10.48324/dandi.000056/0.261106.1949
 ethicsApproval: []
-id: DANDI:000056/draft
+id: DANDI:000056/0.261106.1949
 identifier: DANDI:000056
 keywords:
 - Head direction cells
@@ -191,8 +193,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000056/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000056/0.261106.1949/assets.yaml
 name: Internally organized mechanisms of the head direction sense
+publishedBy:
+  endDate: '2026-11-06T19:49:34.936607+00:00'
+  id: urn:uuid:4f66405b-5c38-4497-9595-a092e50645c3
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-06T19:49:34.936607+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:11673af6-6485-48d2-9228-5312eb3dc125
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: doi:10.1038/nn.3968
   name: Internally organized mechanisms of the head direction sense
@@ -201,15 +215,51 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/nn.3968
-- name: Conversion code (catalystneuro/buzsaki-lab-to-nwb)
-  relation: dcite:IsSupplementedBy
-  repository: GitHub
-  resourceType: dcite:Software
-  schemaKey: Resource
-  url: https://github.com/catalystneuro/buzsaki-lab-to-nwb
+releaseNotes: "## Changes since version 0.250624.0430\n\nAll 40 files were re-converted
+  from the lab's source files, including each session's `Analysis/` folder, which
+  the earlier conversion never read, with a new NeuroConv conversion ([catalystneuro/buzsaki-lab-to-nwb](https://github.com/catalystneuro/buzsaki-lab-to-nwb),
+  PRs [#88](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/88), [#97](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/97),
+  [#99](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/99), [#101](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/101)),
+  and two sessions were added. The conversion fixes problems found by a reproduction
+  attempt ([issue #77](https://github.com/catalystneuro/buzsaki-lab-to-nwb/issues/77)).\n
+  \n**New sessions**\n\n- **Mouse28-140314 and Mouse32-140822**, in the paper but
+  missing from the dandiset. Mouse32-140822 is the session the paper shows for that
+  mouse (Supplementary Fig. 3).\n\n**Corrections**\n\n- **Units** are read from the
+  `.clu`/`.res` files (clusters 2 and up), sorted, with a resolution of 1/20,000 s.
+  A reading error had merged spikes into the wrong units (unit 0/1 of Mouse12-120808),
+  and empty units are gone. Each lab spike train (SpikeData, spikes.cellinfo) was
+  checked against its cluster.\n- **Brain regions.** The units had no structure and
+  every electrode's location was \"unknown\", so in the mice recorded in both regions
+  (Mouse24, 25, 28) no unit could be assigned to the anterodorsal thalamus or the
+  post-subiculum. Electrode groups now follow the lab's anatomical groups, located
+  from `GeneralInfo.shankStructure` with Allen CCF names (anterodorsal nucleus, postsubiculum,
+  CA1, prelimbic area, reticular nucleus; \"unknown\" where the source gives none),
+  and units are matched to them by channel.\n- **Position.** The raw LED series are
+  in pixels (untracked frames as NaN), not metres; the processed position is in metres
+  and head direction in radians, checked against the LED angle.\n- **Sleep states.**
+  The files hold the paper's scoring, with the later buzcode scoring kept and labelled
+  as such.\n- **Subject.** Sex is \"U\": the paper used 5 male and 2 female mice without
+  saying which. The \"Wild type\" genotype was removed, since three mice expressed
+  channelrhodopsin. Age, in neither the paper nor the lab's files, is \"/\" (unknown).\n
+  \n**Additions**\n\n- **Units columns:** `shank`, `cluster_id`, `region`, `in_lab_cell_list`,
+  quality (`lratio`, `mahalanobis_distance`, `isi_index`), head-direction statistics
+  (`hd_preferred_direction`, `hd_p_value`, `hd_kappa`, `hd_peak_rate`, `is_hd_cell`),
+  `cell_type` (pE/pI), and mean waveforms.\n- **Epochs:** the lab's behavioral epochs
+  (open field, radial maze, sleep, light blocks) with the sub-recordings they cover.\n
+  - **Events:** down states, head-direction-cell down states and ripples, in `processing/ecephys`,
+  with their detection parameters.\n- **Electrodes:** probe depths from the CRCNS
+  table and `bad_channel` from sessionInfo.\n- **Ontology terms** (HERD): the experimenters'
+  ORCIDs, the institution's ROR, the species and the brain regions. **HED** for the
+  sleep states (wake `Awake`; SWS `Asleep`; REM `Asleep, sc:Sleep-stage-REM`).\n\n
+  **Known gaps**\n\n- Subject age is not recorded.\n- Mouse32-140820 has no head-direction
+  series, epochs or sleep states in the source.\n- In Mouse17-130130, spikes continue
+  1,101 s past the last sub-recording.\n- In Mouse20, 8 units sit on shanks labelled
+  post-subiculum, though the paper lists no post-subiculum probe for that mouse.\n
+  - The paper's selection of 720 thalamic and 357 post-subicular cells can't be recovered
+  for Mouse24, 25 and 28."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
-url: https://dandiarchive.org/dandiset/000056/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000056/0.261106.1949
+version: 0.261106.1949
 wasGeneratedBy: []
