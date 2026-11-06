@@ -37,7 +37,9 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 177132091353
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 177319791591
   numberOfFiles: 39
   numberOfSubjects: 7
   schemaKey: AssetsSummary
@@ -45,12 +47,18 @@ assetsSummary:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
     name: House mouse
     schemaKey: SpeciesType
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
   variableMeasured:
   - ElectricalSeries
   - Units
   - LFP
   - Position
   - ProcessingModule
+  - CompassDirection
+  - SpatialSeries
+  - ElectrodeGroup
 citation: Peyrache, Adrien; Lacroix, Marie M; Petersen, Peter; Buzsáki, György (2026)
   Internally organized mechanisms of the head direction sense (Version draft) [Data
   set]. DANDI Archive. https://dandiarchive.org/dandiset/000056/draft
